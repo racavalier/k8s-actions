@@ -15,4 +15,4 @@ jobs:
 
       - name: Deploy to K3s Cluster
         run: |
-          kubectl rollout restart deployment/my-app -n default --insecure-skip-tls-verify
+          kubectl --insecure-skip-tls-verify rollout restart deployment/my-app -n default
